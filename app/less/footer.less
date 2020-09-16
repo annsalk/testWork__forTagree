@@ -1,0 +1,204 @@
+//main: style.less
+@import "vars.less";
+
+.footer {
+    background-color: #000;
+    position: relative;
+    min-height: 795px;
+    z-index: 2;
+    padding-bottom: 50px;
+    @media (max-width: 850px) {
+        min-height: auto;
+    }
+    &::before {
+        content: '';
+        width: 30%;
+        height: 100%;
+        background-color: @orange;
+        position: absolute;
+        z-index: -1;
+        @media (max-width: 1600px) {
+            width: 29%;
+        }
+        @media (max-width: 1560px) {
+            width: 28%;
+        }
+        @media (max-width: 1560px) {
+            width: 27%;
+        }
+        @media (max-width: 1400px) {
+            width: 25%;
+        }
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &::after{
+        content: url(../images/shadow11.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        object-fit: cover;
+        top: 0px;
+        left: 30%;
+        z-index: -1;
+        @media (max-width: 1600px) {
+            left: 29%;
+        }
+        @media (max-width: 1560px) {
+            left: 28%;
+        }
+        @media (max-width: 1560px) {
+            left: 27%;
+        }
+        @media (max-width: 1400px) {
+            left: 25%;
+        }
+        @media (max-width: 1200px) {
+            left: 0;
+        }
+        @media (max-width: 850px) {
+            display: none;
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 120px;
+        @media (max-width: 850px) {
+            padding-top: 40px;
+        }
+        @media (max-width: 400px) {
+            display: block;
+        }
+    }
+    &__item--wrapper {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 850px) {
+            display: block;
+        }
+    }
+    &__block--title {
+        font-weight: 900;
+        color:#fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-bottom: 15px;
+        @media (max-width: 1200px) {
+            color: @orange;
+        }
+        @media (max-width: 400px) {
+            padding-bottom: 30px;
+        }
+    }
+    &__link--left {
+        color: #000;
+        font-size: 15px;
+        line-height: 40px;
+        @media (max-width: 1200px) {
+            color: #959595;
+        }
+    }
+    &__usefull--title {
+        padding-top: 40px;
+        @media (max-width: 850px) {
+            padding-top: 0;
+        }
+    }
+    &__link--middle {
+        color: #959595;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    &__copy--text {
+        color: #959595;
+        font-size: 15px;
+    }
+    &__btn {
+        padding: 18px 60px;
+        margin-top: 55px;
+        margin-bottom: 170px;
+        @media (max-width: 850px) {
+            margin-bottom: 10px;
+        }
+    }
+    &__phone--number {
+        display: block;
+    }
+    &__block--list {
+        @media (max-width: 850px) {
+            display: none;
+        }
+    }
+    &__copy--box {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 850px) {
+            display: block;
+        }
+    }
+}
+
+.footer__item--catalog {
+    position: relative;
+    z-index: 3;
+    padding-left: 280px;
+    margin-right: 150px;
+    @media (max-width: 1730px) {
+        padding-left: 50px;
+        margin-right: 85px;
+    }
+    @media (max-width: 850px) {
+        padding-left: 0;
+        margin-right: 0;
+    }
+    
+}
+.block__title--orange {
+    color: @orange;
+}
+.footer__item--contact a{
+    color: #fff;
+}
+.footer__item--contact {
+    text-align: right;
+    padding-top: 20px;
+    @media (max-width: 400px) {
+        text-align: left;
+    }
+}
+.footer__contact--email, .footer__contact--phone {
+    margin-bottom: 55px;
+    @media (max-width: 400px) {
+        margin-bottom: 30px;
+    }
+}
+.footer__icon {
+    position: relative;
+    &::before {
+        content: "\f003";
+        position: absolute;
+        color: @orange;
+        font-family: 'icomoon';
+        font-weight: 900;
+        top: -25px;
+        right: 0;
+        font-size: 20px;
+        @media (max-width: 400px) {
+            left: 0;
+        }
+    }
+}
+.footer__icon--phone {
+    &::before {
+        content: "\e900";
+    }
+}
+.footer__icon--adress {
+    &::before {
+        content: "\f041";
+    }
+}

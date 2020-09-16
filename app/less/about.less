@@ -1,0 +1,113 @@
+//main: style.less
+@import "vars.less";
+
+.about {
+    position: relative;
+    color: #000;
+    background-image: url(../images/img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 350px;
+    padding-bottom: 200px;
+    @media (max-width: 1057px) {
+        padding-top: 200px;
+    }
+    @media (max-width: 800px) {
+        padding-bottom: 50px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 533px;
+        width: 100%;
+        @media (max-width: 900px) {
+            max-width: 433px;
+        }
+    }
+    &__item--position {
+        margin-right: 100px;
+        @media (max-width: 750px) {
+            margin-right: 0;
+        }
+    }
+    &__img {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        max-width: 840px;
+        width: 100%;
+        @media (max-width: 1740px) {
+            width: 600px;
+        }
+        @media (max-width: 1250px) {
+            max-width: 570px;
+        }
+        @media (max-width: 1185px) {
+            display: none;
+        }
+    }
+    &__img--adapt {
+        display: none;
+        @media (max-width: 1185px) {
+            display: block;
+            max-width: 240px;
+            height: 330px;
+            width: 100%;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 750px){
+            display: none;
+        }
+    }
+    &__title {
+        padding-bottom: 85px;
+        @media (max-width: 1185px) {
+            font-size: 48px !important;
+        }
+    }
+    &__item-title {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 35px;
+        padding-left: 100px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 100%;
+            background:linear-gradient(to top, @orange 40%, #f9b77f 60%);
+            left: 0;
+            top: 5px;
+        }
+        @media (max-width: 1300px) {
+            padding-left: 30px;
+        }
+    }
+    &__item-text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #767676;
+        font-weight: 400;
+        margin-bottom: 70px;
+        padding-left: 100px;
+        @media (max-width: 1300px) {
+            padding-left: 30px;
+        }
+    }
+    &__content--link {
+        padding: 20px 30px;
+        margin-left: 100px;
+        @media (max-width: 1300px) {
+            margin-left: 30px !important;
+        }
+    }
+}

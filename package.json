@@ -1,0 +1,39 @@
+{
+  "name": "start__gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ann Salkova",
+  "license": "ISC",
+  "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "animate.css": "^4.1.0",
+    "browser-sync": "^2.26.7",
+    "cssmin": "^0.4.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-x-includer": "^0.1.2",
+    "magnific-popup": "^1.1.0",
+    "mixitup": "^3.3.1",
+    "normalize.css": "^8.0.1",
+    "rateyo": "^2.3.5",
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "ion-rangeslider": "^2.3.1",
+    "jquery-form-styler": "^2.0.2",
+    "jquery-validation": "^1.19.2",
+    "swiper": "^6.2.0"
+  }
+}
